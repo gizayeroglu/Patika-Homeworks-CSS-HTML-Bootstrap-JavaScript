@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .beta{
+            float: right;
+            text-transform: uppercase;
+            color: grey;
+        }
+        header{
+            width: fit-content;
+            margin: auto;
+        }
+        header h1{
+            font-size: 150px;
+            letter-spacing: 3px;
+        }
+        h1 span{
+            text-shadow:10px 10px 15px grey;
+        }
+        .googleSearch{
+            margin: auto;
+            text-align: center;
+        }
+        .buttons{
+            margin-top: 10px;
+        }
+        .footerTable{
+            margin: auto;
+            margin-top: 20px;
+            background-color:#62b3aa ;
+       }
+       .footerTable ul{
+           list-style: none;
+           padding: 50px;
+       }
+       footer p{
+           margin:auto;
+           text-align: center;
+           margin-top: 5px;
+       }
+       td{
+           border-right: 5px solid white;
+       }
+       .lastChild{
+           border: none;
+       }
+        #searchBar{
+            width: 500px;
+        }
+        .googleSearch p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><span style="color: blue;">G</span><span style="color: red;">o</span><span style="color: yellow;">o</span><span style="color: blue;">g</span><span style="color: greenyellow;">l</span><span style="color: red;">e</span><span style="color: blue;">!</span></h1>
+        </header>
+        <div class="googleSearch">
+            <p>Search the web using Google!</p>
+            <input type="text" id="searchBar">
+            <br>
+            <input type="button" value="Google Search" class="buttons">
+            <input type="button" value="I am feeling lucky" class="buttons">
+        </div>
+    </main>
+    <footer>
+       <table class="footerTable">
+           <tr>
+               <td>
+                   <ul>
+                       <li>Special Searches</li>
+                       <li><a href="">Stanford Search</a></li>
+                        <li><a href="">Linux Search</a></li>
+                   </ul>
+               </td>
+                <td>
+                   <ul>
+                       <li><a  href="">Help</a></li>
+                       <li><a href="">About Google</a></li>
+                       <li><a href="">Company Info</a></li>
+                       <li><a href="">Google! Logos</a></li>
+                   </ul>
+               </td>
+               <td class="lastChild">
+                   <ul>
+                       <li>Get Google></li>
+                       <li>Updates monthly!</li>
+                       <li><input type="mail" placeholder="your e-mail"></li>
+                       <li><input type="button" value="Subscribe"><a href="">Archive</a></li>
+                   </ul>
+               </td>
+           </tr>
+       </table>
+       <p>&copy; 1998 Google Inc.</p>
+    </footer>
+    
+</body>
+</html>
