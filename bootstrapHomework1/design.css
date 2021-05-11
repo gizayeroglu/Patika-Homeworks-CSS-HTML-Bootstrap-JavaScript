@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e9ecef;
+}
+/*navbar*/
+.navbar-brand {
+  color: deeppink !important;
+}
+/*navbar*/
+/*Home Page*/
+.jumbotronContainer {
+  text-align: center;
+}
+.anaBaslik {
+  color: deeppink;
+}
+.altBaslik {
+  color: goldenrod;
+}
+.homePageList {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 15px;
+}
+/*Home Page*/
+/*Hakkımızda */
+.hakkimizdaBaslik {
+  color: purple;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.hakkimizdaMainArea {
+  padding: 20px;
+}
+.hakkimizdaMainArea p {
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.hakkimizdaMainArea .altBaslik {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+/*Hakkımızda */
+/*Urunler*/
+.urunlerBaslik {
+  color: purple;
+  text-align: center;
+  font-weight: 300;
+  margin: 25px 0;
+  font-size: 50px;
+}
+.card img {
+  height: 250px;
+}
+.card {
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+}
+.card p {
+  color: purple;
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.card button {
+  width: 50px;
+  border: none;
+  color: white;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.productList .card {
+  margin: auto;
+  margin-bottom: 30px;
+}
+/*Urunler*/
