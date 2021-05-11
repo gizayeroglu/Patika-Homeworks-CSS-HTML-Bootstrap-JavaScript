@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  display: inline-flex;
+}
+.rightBar {
+  float: left;
+  right: 20px;
+  position: relative;
+}
+.leftBar {
+  float: right;
+  padding-right: 20px;
+}
+.mainArea {
+  margin: auto;
+  clear: both;
+  text-align: center;
+  padding-top: 100px;
+}
+.logo {
+  margin-bottom: 30px;
+}
+.mainSearchBar {
+  border: 3px solid #f3f3f3;
+  border-radius: 40px;
+  padding: 10px;
+  height: 25px;
+  width: 600px;
+  margin: auto;
+}
+.far {
+  /*search icon */
+  float: left;
+  color: gray;
+  cursor: pointer;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+.mic {
+  width: 25px;
+  cursor: pointer;
+}
+#inputSearch {
+  width: 530px;
+  border: none;
+  height: 20px;
+  outline: none;
+}
+.buttons input {
+  background-color: #f3f3f3;
+  border: none;
+  width: 150px;
+  height: 40px;
+  color: grey;
+  margin-top: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+ul > li {
+  color: #737373;
+  padding: 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.apps {
+  cursor: pointer;
+}
+.imageLoggedIn {
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  position: relative;
+  border-radius: 40px;
+}
+.bottomList {
+  background-color: #f3f3f3;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.apps {
+  top: -3px;
+  position: relative;
+}
