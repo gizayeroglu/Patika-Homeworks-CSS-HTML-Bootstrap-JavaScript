@@ -1,0 +1,152 @@
+$mainColor: #f8f8f5;
+$whiteColor: #fff;
+$fontColor: rgb(12, 11, 11);
+$boldFontColor: #000;
+$muteFontColor: #b2bec3;
+$storyColor: rgba(243, 70, 137, 0.6);
+$iconsFontSize: 25px;
+$blueColor: #00cec9;
+$borderColor: #d6d3d3c9;
+
+body {
+  margin: 0;
+  padding: 20px;
+  line-height: 1.5;
+  background-color: $mainColor;
+  font {
+    size: 1rem;
+    color: $fontColor;
+    font-weight: 500;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: $fontColor;
+  }
+}
+@mixin textTypes($fontColor) {
+  font-weight: 600;
+  color: $fontColor;
+  cursor: pointer;
+}
+.boldText {
+  @include textTypes($boldFontColor);
+}
+.muteText {
+  @include textTypes($muteFontColor);
+}
+.blueText {
+  @include textTypes($blueColor);
+}
+.muteTextBottom {
+  @include textTypes($muteFontColor);
+  opacity: 0.2;
+}
+main {
+  padding: 50px;
+}
+.navbar {
+  height: 54px;
+  padding-top: 10px;
+}
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: $whiteColor;
+  width: 100%;
+  left: 0;
+}
+.logo {
+  height: 40px;
+  margin-left: 192px;
+}
+.searchOption {
+  text-align: center;
+  margin-left: 14rem;
+  width: 250px;
+}
+.iconsList {
+  display: inline-flex;
+  li {
+    padding: 0 15px 0 15px;
+    font-size: $iconsFontSize;
+  }
+}
+@mixin images($width, $height, $borderRadius) {
+  width: $width;
+  height: $height;
+  border-radius: $borderRadius;
+  cursor: pointer;
+}
+.userImg {
+  @include images(40px, 40px, 40px);
+}
+.storyImg {
+  @include images(60px, 60px, 60px);
+  border: 3px solid $storyColor;
+  background-color: $storyColor;
+}
+.storyList {
+  display: inline-flex;
+  li {
+    padding: 0 10px 0 10px;
+    text-align: center;
+  }
+}
+.shareOption {
+  float: right;
+  margin-right: 20px;
+}
+.rightAlign {
+  float: right;
+  margin-right: 5px;
+}
+.usersList {
+  right: 35px;
+  position: relative;
+  li {
+    padding: 3px 3px;
+  }
+  img {
+    margin-right: 15px;
+  }
+}
+.comments,
+.share,
+.userInfo {
+  padding: 10px;
+}
+
+.iconsListAfterImage {
+  font-size: $iconsFontSize;
+  padding-left: 5px;
+  display: inline-flex;
+  margin-top: 10px;
+  li {
+    padding: 0 10px 0 10px;
+    &:last-child {
+      right: 5px;
+      position: absolute;
+    }
+  }
+}
+.fa-ellipsis-h {
+  //... icons
+  float: right;
+  margin-right: 5px;
+}
+.storySection {
+  border: 1px solid $borderColor;
+  margin: auto;
+  width: fit-content;
+  padding: 0 40px 0 40px;
+  background-color: $whiteColor;
+}
+.searchIcon {
+  left: 680px;
+  top: 20px;
+  position: absolute;
+}

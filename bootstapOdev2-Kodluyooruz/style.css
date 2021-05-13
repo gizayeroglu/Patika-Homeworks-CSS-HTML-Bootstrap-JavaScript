@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 20px;
+  line-height: 1.5;
+  background-color: #f8f8f5;
+}
+
+body font {
+  size: 1rem;
+  color: #0c0b0b;
+  font-weight: 500;
+}
+
+body li {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+  color: #0c0b0b;
+}
+
+.boldText {
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+
+.muteText {
+  font-weight: 600;
+  color: #b2bec3;
+  cursor: pointer;
+}
+
+.blueText {
+  font-weight: 600;
+  color: #00cec9;
+  cursor: pointer;
+}
+
+.muteTextBottom {
+  font-weight: 600;
+  color: #b2bec3;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+main {
+  padding: 50px;
+}
+
+.navbar {
+  height: 54px;
+  padding-top: 10px;
+}
+
+.navbarContainer {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+}
+
+.logo {
+  height: 40px;
+  margin-left: 192px;
+}
+
+.searchOption {
+  text-align: center;
+  margin-left: 14rem;
+  width: 250px;
+}
+
+.iconsList {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.iconsList li {
+  padding: 0 15px 0 15px;
+  font-size: 25px;
+}
+
+.userImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.storyImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  cursor: pointer;
+  border: 3px solid rgba(243, 70, 137, 0.6);
+  background-color: rgba(243, 70, 137, 0.6);
+}
+
+.storyList {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.storyList li {
+  padding: 0 10px 0 10px;
+  text-align: center;
+}
+
+.shareOption {
+  float: right;
+  margin-right: 20px;
+}
+
+.rightAlign {
+  float: right;
+  margin-right: 5px;
+}
+
+.usersList {
+  right: 35px;
+  position: relative;
+}
+
+.usersList li {
+  padding: 3px 3px;
+}
+
+.usersList img {
+  margin-right: 15px;
+}
+
+.comments,
+.share,
+.userInfo {
+  padding: 10px;
+}
+
+.iconsListAfterImage {
+  font-size: 25px;
+  padding-left: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.iconsListAfterImage li {
+  padding: 0 10px 0 10px;
+}
+
+.iconsListAfterImage li:last-child {
+  right: 5px;
+  position: absolute;
+}
+
+.fa-ellipsis-h {
+  float: right;
+  margin-right: 5px;
+}
+
+.storySection {
+  border: 1px solid #d6d3d3c9;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 40px 0 40px;
+  background-color: #fff;
+}
+
+.searchIcon {
+  left: 680px;
+  top: 20px;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
