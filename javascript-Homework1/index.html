@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #343a40;
+      }
+      h5,
+      span {
+        color: #e98208;
+        font-size: 50px;
+        width: 90%;
+        letter-spacing: 10px;
+        font-weight: 300;
+      }
+      .container {
+        left: 20%;
+        top: 15%;
+        position: absolute;
+      }
+      strong {
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h5>Merhaba, <span id="name"></span> Hoş geldin!</h5>
+      <span id="time"></span><span id="day"></span>
+      <h5>
+        tarihinde
+        <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın
+        Javascript bölümü 1.Ödevindesiniz.
+      </h5>
+    </div>
+
+    <script>
+      let name = prompt("Adınız nedir?");
+      document.getElementById("name").innerHTML = name + "!";
+      function refrClock() {
+        let d = new Date();
+        let s = d.getSeconds();
+        let m = d.getMinutes();
+        let h = d.getHours();
+        let day = d.getDay();
+        let date = d.getDate();
+        let month = d.getMonth();
+        let year = d.getFullYear();
+        let days = new Array(
+          "Pazar",
+          "Pazartesi",
+          "Salı",
+          "Çarşamba",
+          "Perşembe",
+          "Cuma",
+          "Cumartesi"
+        );
+        if (s < 10) {
+          s = "0" + s;
+        }
+        if (m < 10) {
+          m = "0" + m;
+        }
+        document.getElementById("day").innerHTML = days[day];
+        document.getElementById("time").innerHTML = h + ": " + m + ": " + s + " ";
+        setTimeout("refrClock()", 1000);
+      }
+      refrClock();
+    </script>
+  </body>
+</html>
