@@ -1,0 +1,392 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f3f2ef;
+}
+
+body a {
+  color: #1d1c1c;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+  color: #1d1c1c;
+}
+
+i {
+  cursor: pointer;
+}
+
+.navbar,
+.iconsList {
+  height: 60px;
+}
+
+.iconsList {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconsList ul {
+  margin: auto;
+  top: -25px;
+  position: relative;
+}
+
+.logo {
+  height: 45px;
+}
+
+.navbarContainer {
+  background-color: #fff;
+  width: 100%;
+}
+
+.searchBox {
+  width: 300px;
+  background-color: #eef3f8;
+}
+
+.littleUserImage {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.mediumUserImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.largeUserImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: auto;
+}
+
+.messageBoxUserImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.iconsList {
+  color: #666666;
+  text-align: center;
+  cursor: pointer;
+}
+
+.iconsList li {
+  padding: 0 15px 0 15px;
+}
+
+.iconsList .fas {
+  font-size: 20px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card h6,
+.card p {
+  padding: 0 15px;
+}
+
+.blueText {
+  color: #0a66c2;
+  float: right;
+  font-weight: 600;
+  font-size: 11pt;
+  cursor: pointer;
+}
+
+.hoverBackground:hover {
+  background-color: #f3f2ef;
+  cursor: pointer;
+}
+
+.yellowIcon {
+  color: #e7a33e;
+}
+
+.grayIcon {
+  color: #666666;
+}
+
+.infoIcon {
+  color: #666666;
+  float: right;
+}
+
+.bold {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.followButton {
+  color: #666666;
+  border: 2px solid #666666;
+  border-radius: 20px;
+  padding: 5px;
+  width: 100px;
+  background-color: #fff;
+}
+
+.followButton:hover {
+  background-color: #f3f2ef;
+}
+
+.rightCard .mediumUserImage {
+  margin-left: 0;
+  left: 14px;
+  position: absolute;
+}
+
+.userInformationInAside {
+  float: right;
+  padding-left: 12px;
+}
+
+.listedLinks a {
+  text-decoration: none;
+}
+
+.listedLinks .copyArea {
+  float: left;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+.postArea {
+  width: 530px;
+  height: 50px;
+  border: 2px solid #f3f2ef;
+  border-radius: 50px;
+  padding: 20px;
+  margin-left: 20px;
+  outline: none;
+}
+
+.iconsMainArea i {
+  font-size: 22px;
+  margin-right: 5px;
+  top: 3px;
+  position: relative;
+}
+
+.iconsMainArea h6 {
+  top: -10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.blueIcon {
+  color: #0a66c2;
+}
+
+.greenIcon {
+  color: #7fc15e;
+}
+
+.pinkIcon {
+  color: #f5987e;
+}
+
+.lightBlueIcon {
+  color: #70b5f9;
+}
+
+.postLikeButtons {
+  border-radius: 50px;
+  border: none;
+}
+
+.postLikeButtons i {
+  font-size: 12px;
+}
+
+.postLikeButtons:first-child {
+  background-color: #eef3f8;
+}
+
+.postFavComICon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa-ellipsis-h {
+  float: right;
+  right: 15px;
+  top: 10px;
+  position: absolute;
+}
+
+.messageBox h6 {
+  color: #1d1c1c;
+  padding-left: 0;
+}
+
+.messageBox .messageBoxList {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.messageBox .card {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 5px;
+  margin: 5px;
+  bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.messageBox .card .messageIcons {
+  float: right;
+  margin-right: 15px;
+  color: #666666;
+}
+
+.messageBox .card .messageIcons .grayIcon {
+  font-size: 18px;
+}
+
+.messageBox .card .onlineIcon {
+  font-size: 12px;
+  left: 43px;
+  top: 33px;
+  position: absolute;
+}
+
+.stickyArea {
+  top: 80px;
+}
+
+.bottomStickyLinkList small:hover,
+.bottomStickyLinkList a:hover {
+  color: #0a66c2 !important;
+}
+
+.listedEducations {
+  padding-left: 10px;
+}
+
+.listedEducations small {
+  left: -15px;
+  position: relative;
+}
+
+.seeMoreIcon {
+  float: right;
+  top: -16px;
+  position: relative;
+}
+
+.displayIcon .hoverIcon {
+  display: none;
+}
+
+.displayIcon:hover .hoverIcon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: right;
+}
+
+/*post area allignment*/
+.userInfo .mediumUserImage {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.userInfo .col-10 {
+  margin-top: 15px !important;
+}
+
+.activityIcon {
+  float: right;
+}
+
+.reactionIconsPost a:hover {
+  text-decoration: none;
+}
+
+.navbarContainer {
+  border-bottom: 2px solid #f0eeea;
+}
+
+.backgroundImg {
+  background-image: url("images/background.png");
+  background-size: 100% 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.backgroundImg .largeUserImage {
+  top: 30px;
+  position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+  .iconsList p {
+    display: none;
+  }
+  .iconsList li {
+    padding: 10px 5px 10px 5px;
+  }
+  .iconsList i {
+    font-size: 5px;
+  }
+  .postArea {
+    width: 450px;
+  }
+  .iconsMainArea h6 {
+    min-width: 130px;
+  }
+  .sortbyArea small {
+    font-size: 9pt;
+  }
+  .messageBoxList h6 {
+    font-size: 11pt;
+  }
+  .messageBoxList i {
+    font-size: 12pt;
+    margin-top: 10px;
+  }
+  .messageBoxList .onlineIcon i {
+    top: -4px;
+    left: 1px;
+    font-size: 9pt;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .iconsList {
+    display: none;
+  }
+  .reactionIconsPost h6 {
+    font-size: 8pt;
+    padding: 0 5px 0 5px;
+  }
+  .userInfo .mediumUserImage {
+    display: none;
+  }
+  .userInfo .col-10 {
+    left: -40px;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=style.css.map */

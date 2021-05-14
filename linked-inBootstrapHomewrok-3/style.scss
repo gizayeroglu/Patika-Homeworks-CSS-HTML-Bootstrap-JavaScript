@@ -1,0 +1,369 @@
+$brandColor: #0a66c2;
+$whiteColor: #fff;
+$iconsFontSize: 20px;
+$blackColor: rgb(29, 28, 28);
+$grayColor: #666666;
+$bodyColor: #f3f2ef;
+$outlineColor: #eef3f8;
+$yellowColor: #e7a33e;
+$pinkColor: #f5987e;
+$greenColor: #7fc15e;
+$lightBlueColor: #70b5f9;
+$navbarBorderColor: #f0eeea;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $bodyColor;
+  a {
+    color: $blackColor;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: $blackColor;
+    }
+  }
+}
+i {
+  cursor: pointer;
+}
+.navbar,
+.iconsList {
+  height: 60px;
+}
+.iconsList {
+  align-items: center;
+  ul {
+    margin: auto;
+    top: -25px;
+    position: relative;
+  }
+}
+.logo {
+  height: 45px;
+}
+.navbarContainer {
+  background-color: $whiteColor;
+  width: 100%;
+}
+.searchBox {
+  width: 300px;
+  background-color: $outlineColor;
+}
+@mixin userImage($width, $height, $borderRadius) {
+  width: $width;
+  height: $height;
+  border-radius: $borderRadius;
+  cursor: pointer;
+}
+.littleUserImage {
+  @include userImage(25px, 25px, 25px);
+}
+.mediumUserImage {
+  @include userImage(60px, 60px, 60px);
+}
+.largeUserImage {
+  @include userImage(80px, 80px, 80px);
+  border: 2px solid $whiteColor;
+  margin: auto;
+}
+.messageBoxUserImage {
+  @include userImage(40px, 40px, 40px);
+}
+.iconsList {
+  //navbar icons
+  color: $grayColor;
+  text-align: center;
+  cursor: pointer;
+  li {
+    padding: 0 15px 0 15px;
+  }
+  .fas {
+    font-size: $iconsFontSize;
+  }
+}
+.card {
+  border-radius: 10px;
+  h6,
+  p {
+    padding: 0 15px;
+  }
+}
+.blueText {
+  color: $brandColor;
+  float: right;
+  font-weight: 600;
+  font-size: 11pt;
+  cursor: pointer;
+}
+.hoverBackground:hover {
+  background-color: $bodyColor;
+  cursor: pointer;
+}
+.yellowIcon {
+  color: $yellowColor;
+}
+.grayIcon {
+  color: $grayColor;
+}
+.infoIcon {
+  color: $grayColor;
+  float: right;
+}
+.bold {
+  font-weight: 600;
+  cursor: pointer;
+}
+.followButton {
+  color: $grayColor;
+  border: 2px solid $grayColor;
+  border-radius: 20px;
+  padding: 5px;
+  width: 100px;
+  background-color: $whiteColor;
+  &:hover {
+    background-color: $bodyColor;
+  }
+}
+.rightCard {
+  .mediumUserImage {
+    margin-left: 0;
+    left: 14px;
+    position: absolute;
+  }
+}
+.userInformationInAside {
+  float: right;
+  padding-left: 12px;
+}
+.listedLinks {
+  a {
+    text-decoration: none;
+  }
+  .copyArea {
+    float: left;
+    padding-left: 15px;
+    padding-bottom: 30px;
+  }
+}
+
+.postArea {
+  width: 530px;
+  height: 50px;
+  border: 2px solid $bodyColor;
+  border-radius: 50px;
+  padding: 20px;
+  margin-left: 20px;
+  outline: none;
+}
+.iconsMainArea {
+  i {
+    font-size: 22px;
+    margin-right: 5px;
+    top: 3px;
+    position: relative;
+  }
+  h6 {
+    top: -10px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.blueIcon {
+  color: $brandColor;
+}
+.greenIcon {
+  color: $greenColor;
+}
+.pinkIcon {
+  color: $pinkColor;
+}
+.lightBlueIcon {
+  color: $lightBlueColor;
+}
+.postLikeButtons {
+  border-radius: 50px;
+  i {
+    font-size: 12px;
+  }
+  border: none;
+  &:first-child {
+    background-color: $outlineColor;
+  }
+}
+.postFavComICon {
+  font-size: $iconsFontSize;
+  cursor: pointer;
+}
+.fa-ellipsis-h {
+  float: right;
+  right: 15px;
+  top: 10px;
+  position: absolute;
+}
+.messageBox {
+  h6 {
+    color: $blackColor;
+    padding-left: 0;
+  }
+  .messageBoxList {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .card {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 5px;
+    margin: 5px;
+    bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    .messageIcons {
+      float: right;
+      margin-right: 15px;
+      color: $grayColor;
+      .grayIcon {
+        font-size: 18px;
+      }
+    }
+    .onlineIcon {
+      font-size: 12px;
+      left: 43px;
+      top: 33px;
+      position: absolute;
+    }
+  }
+}
+.stickyArea {
+  // navın üstüne çıkıyor
+  top: 80px;
+}
+.bottomStickyLinkList {
+  small:hover,
+  a:hover {
+    color: $brandColor !important;
+  }
+}
+.listedEducations {
+  padding-left: 10px;
+  small {
+    left: -15px;
+    position: relative;
+  }
+}
+.seeMoreIcon {
+  float: right;
+  top: -16px;
+  position: relative;
+}
+
+.displayIcon {
+  //if the section which name is bugünün en önemli eğitimleri listed, if branch is hover the icon will be displayed as a inline flex
+  .hoverIcon {
+    display: none;
+  }
+  &:hover {
+    .hoverIcon {
+      display: inline-flex;
+      float: right;
+    }
+  }
+}
+/*post area allignment*/
+.userInfo {
+  .mediumUserImage {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+.userInfo {
+  .col-10 {
+    margin-top: 15px !important;
+  }
+}
+.activityIcon {
+  float: right;
+}
+.reactionIconsPost {
+  a:hover {
+    text-decoration: none;
+  }
+}
+.navbarContainer {
+  border-bottom: 2px solid $navbarBorderColor;
+}
+.backgroundImg {
+  background-image: url("images/background.png");
+  background-size: 100% 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  .largeUserImage {
+    top: 30px;
+    position: relative;
+  }
+}
+@media screen and(max-width:1400px) {
+  .iconsList {
+    p {
+      display: none;
+    }
+    li {
+      padding: 10px 5px 10px 5px;
+    }
+    i {
+      font-size: 5px;
+    }
+  }
+  .postArea {
+    width: 450px;
+  }
+  .iconsMainArea {
+    h6 {
+      min-width: 130px;
+    }
+  }
+  .sortbyArea {
+    small {
+      font-size: 9pt;
+    }
+  }
+  .messageBoxList {
+    h6 {
+      font-size: 11pt;
+    }
+    i {
+      font-size: 12pt;
+      margin-top: 10px;
+    }
+    .onlineIcon {
+      i {
+        top: -4px;
+        left: 1px;
+        font-size: 9pt;
+        position: absolute;
+      }
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .iconsList {
+    display: none;
+  }
+  .reactionIconsPost {
+    h6 {
+      font-size: 8pt;
+      padding: 0 5px 0 5px;
+    }
+  }
+  .userInfo {
+    .mediumUserImage {
+      display: none;
+    }
+    .col-10 {
+      left: -40px;
+      position: relative;
+    }
+  }
+}
