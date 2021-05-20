@@ -1,0 +1,107 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 3rem;
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 32px;
+  color: white;
+}
+
+.todoListCol {
+  margin: auto;
+}
+
+.header {
+  background-image: url("images/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"), linear-gradient(to left, #f78501, #eeeeee, #f78501);
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  cursor: pointer !important;
+  padding-left: 0;
+}
+
+ul > li:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+ul > li:nth-child(odd) {
+  background-color: #fcfcfc;
+}
+
+ul li {
+  padding: 0 10px;
+}
+
+ul .closeButton {
+  color: gray;
+  float: right;
+  margin-right: 15px;
+}
+
+ul .closeButton:active, ul .closeButton:hover {
+  color: #f78501;
+  font-size: 25px;
+}
+
+ul .checkIcon {
+  display: none;
+}
+
+.listedItemCompleted {
+  text-decoration: line-through;
+  background-color: #276678 !important;
+  color: white;
+}
+
+.listedItemCompleted .checkIcon {
+  color: white;
+  margin: 0 10px;
+  display: inline !important;
+}
+
+.listedItemCompleted .closeButton {
+  color: white;
+}
+
+.addItem {
+  border: none;
+  background-color: #eeeeee;
+  width: 20%;
+  margin: 0;
+  box-shadow: 1px 2px 15px gray;
+  color: gray;
+  font-weight: 600;
+}
+
+.inputBox {
+  width: 72%;
+  border: none;
+  margin: 0;
+  outline: none;
+  box-shadow: 1px 2px 15px gray;
+  padding-right: 0;
+}
+
+.toast {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.toast .closeToast {
+  float: right;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #f78501;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
