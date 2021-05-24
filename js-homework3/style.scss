@@ -1,0 +1,79 @@
+$backgroundColor: #f1f5f8;
+$whiteColor: rgb(255, 245, 245);
+$blackColor: black;
+$redColor: #e00a00;
+$orangeColor: #ff6a23;
+$grayColor: gray;
+$fontFamily: "Zilla Slab", serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $backgroundColor;
+  font-family: $fontFamily;
+}
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: $orangeColor;
+}
+h4 {
+  color: $redColor;
+  font-size: 24px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  .btn-item {
+    margin-left: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px 15px;
+    background: transparent;
+    &:hover {
+      background-color: $blackColor;
+      color: $whiteColor;
+    }
+    &:focus {
+      border: 5px solid $grayColor;
+      outline: none;
+    }
+  }
+}
+
+.menu {
+  margin-top: 20px;
+  .price {
+    float: right;
+  }
+  .picture {
+    height: 175px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: 0.25rem solid $blackColor;
+    background: $blackColor;
+    float: left;
+    object-fit: cover;
+    margin-right: 20px;
+    width: 30%;
+  }
+  .menu-text {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid $blackColor !important;
+  background: transparent;
+}
